@@ -1,0 +1,4 @@
+#!/bin/sh
+export CATALINA_BASE=<%= webapp_base -%>/<%= username -%>/tomcat
+/usr/share/tomcat6/bin/shutdown.sh
+echo "Tomcat stopped (<%= username -%>)"
