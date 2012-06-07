@@ -19,5 +19,13 @@ tomcat::webapp { 'jira':
 	java_opts => "-server -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true -Xms128m -Xmx512m -XX:MaxPermSize=256m -Djava.awt.headless=true",
 	description => "Atlassian JIRA",
 	webapp_base => "/opt",
-	server_host_config => template("tomcat/example/context.erb")
+	server_host_config => template("tomcat/example/context.erb"),
+	service_require => Tomcat::Webapp::Lib['jira-log4j'],
+}
+
+tomcat::webapp::lib { 'jira-log4j':
+	username => 'jira',
+	filename => 'log4j',
+	source => "puppet:///modules/tomcat/example/log4j.jar",
+	webapp_base => "/opt",
 }
