@@ -1,0 +1,4 @@
+puppet-tomcat
+=============
+
+Puppet module for installing Tomcat 6 packages and creating Tomcat user instances
