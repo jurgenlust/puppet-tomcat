@@ -9,8 +9,8 @@
   "version": "",
   "checksums": {
     "Modulefile": "0be922348c049b235419e56167c5dcd7",
-    "README": "821b2be5212ff8f9f1fce1e2d647ce74",
-    "README.md": "a3469feabdc496cc481e6d06279c35f6",
+    "README": "acbd0cd1090ae2017f1c6614e379ba84",
+    "README.md": "0729fd54d33cdb37c140fc97cf93f074",
     "files/conf/catalina.policy": "4a4b4804690c38f542607834976ec678",
     "files/conf/catalina.properties": "958cbb7aea9224589b899ecf065d9d47",
     "files/conf/context.xml": "0fe95a15b3f4531be3db19260bfa148d",
@@ -18,11 +18,13 @@
     "files/conf/tomcat-users.xml": "4d9f57e1f2d2cc184a5972322df68852",
     "files/conf/web.xml": "ebd75a90327c9c33c1c626c77844b0f5",
     "files/example/examples.war": "718676ff306ed231320d73765a46e88e",
+    "files/example/log4j.jar": "fb87bd84e336ca3dc6b6c108f51bf25e",
     "manifests/init.pp": "3577dc289769d99a5f39a4d7597d7296",
     "manifests/java.pp": "13b1b9019dc650b3fe4f45a64cee8cb1",
     "manifests/packages.pp": "0d297a1541a4bbddc218304a24e86433",
     "manifests/services.pp": "4b9750688aafbf3f59301b4d06ffc1ba",
-    "manifests/webapp.pp": "012db584a88aa2dcc32f07127d66c9ed",
+    "manifests/webapp.pp": "d66764f845c539a1f2a655ef19ef547e",
+    "manifests/webapp/lib.pp": "512270337f1df40bd551a51730c39a45",
     "manifests/webapp/service.pp": "def66fad2817f637e85c027f55609f8a",
     "manifests/webapp/tomcat.pp": "7149eaf970bc3a742f5f0e028e77c6e5",
     "manifests/webapp/user.pp": "a931a9bc9ffd2b4c61c04d9749d8d041",
@@ -36,7 +38,7 @@
     "templates/example/context.erb": "a82565074bc3db03fcf356a9b843aed0",
     "templates/service/init.erb": "4a3866e5683e78738f7bdb08d7d9c273",
     "tests/Vagrantfile": "145fbb98776370204fb08e831823e5c6",
-    "tests/init.pp": "2de7575b5735b7e8e8f9ec40d2ebd6ee"
+    "tests/init.pp": "0be4feb95cc798c59b69ccafe4b19799"
   },
   "dependencies": []
 }

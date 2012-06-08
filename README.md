@@ -6,8 +6,12 @@ instances on Debian and Ubuntu.
 
 # Installation #
 
-Clone this repository in /etc/puppet, but make sure you clone it as directory
-'tomcat'.
+Clone this repository in /etc/puppet/modules, but make sure you clone it as directory
+'tomcat':
+
+	cd /etc/puppet/modules
+	git clone https://github.com/jurgenlust/puppet-tomcat.git tomcat
+
 
 # Usage #
 
