@@ -26,6 +26,7 @@ define tomcat::webapp(
 		tomcat::webapp::user { $username: 
 			username => $username,
 			webapp_base => $webapp_base,
+			require => Class["tomcat"],
 		}
 		tomcat::webapp::tomcat { $username:
 			username => $username, 

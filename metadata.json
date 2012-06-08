@@ -23,7 +23,7 @@
     "manifests/java.pp": "13b1b9019dc650b3fe4f45a64cee8cb1",
     "manifests/packages.pp": "0d297a1541a4bbddc218304a24e86433",
     "manifests/services.pp": "4b9750688aafbf3f59301b4d06ffc1ba",
-    "manifests/webapp.pp": "d66764f845c539a1f2a655ef19ef547e",
+    "manifests/webapp.pp": "d5c9d2c9c12d3fdfd302323dbd081920",
     "manifests/webapp/ajp.pp": "2d7a9c60d867e97269798b63257af8e4",
     "manifests/webapp/lib.pp": "512270337f1df40bd551a51730c39a45",
     "manifests/webapp/service.pp": "def66fad2817f637e85c027f55609f8a",
