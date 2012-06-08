@@ -24,6 +24,7 @@
     "manifests/packages.pp": "0d297a1541a4bbddc218304a24e86433",
     "manifests/services.pp": "4b9750688aafbf3f59301b4d06ffc1ba",
     "manifests/webapp.pp": "d66764f845c539a1f2a655ef19ef547e",
+    "manifests/webapp/ajp.pp": "2d7a9c60d867e97269798b63257af8e4",
     "manifests/webapp/lib.pp": "512270337f1df40bd551a51730c39a45",
     "manifests/webapp/service.pp": "def66fad2817f637e85c027f55609f8a",
     "manifests/webapp/tomcat.pp": "7149eaf970bc3a742f5f0e028e77c6e5",
@@ -31,14 +32,16 @@
     "manifests/webapp/war.pp": "8e06f07241e58c5dafa1f9dc96181a29",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/ajp/proxy.erb": "a7261583ed0c5687bf2f053c8032efb7",
     "templates/bin/setenv.sh.erb": "c213559351cfa2a930473de9c0214843",
     "templates/bin/shutdown.sh.erb": "3be34fffabed84bb3abc2b5fe4c70cfb",
     "templates/bin/startup.sh.erb": "eb02bb81f6ec7f208bfe8ec219090181",
     "templates/conf/server.xml.erb": "139fb48d6a304ae744f7dbd2f7eb52d9",
     "templates/example/context.erb": "a82565074bc3db03fcf356a9b843aed0",
+    "templates/example/default-site.erb": "9d4bc4c53b0ed51e3e34aa26e8610b0c",
     "templates/service/init.erb": "4a3866e5683e78738f7bdb08d7d9c273",
-    "tests/Vagrantfile": "145fbb98776370204fb08e831823e5c6",
-    "tests/init.pp": "0be4feb95cc798c59b69ccafe4b19799"
+    "tests/Vagrantfile": "c5ac09eb50c3c5263f3744796c705af5",
+    "tests/init.pp": "9509a271eda738808ac77b8c81858d27"
   },
   "dependencies": []
 }
