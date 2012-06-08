@@ -1,0 +1,2 @@
+ProxyPass /<%= context -%> ajp://<%= webapp_hostname -%>:8<%= number -%>09/<%= context %>
+ProxyPassReverse /<%= context -%> <%= scheme -%>://<%= apache_hostname -%>/<%= context %>

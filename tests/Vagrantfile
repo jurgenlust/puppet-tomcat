@@ -4,6 +4,7 @@ Vagrant::Config.run do |config|
 
   config.vm.forward_port 8180, 8180
   config.vm.forward_port 8280, 8280
+  config.vm.forward_port 80  , 8080
 
   config.vm.provision :puppet, :module_path => "../../" do |puppet|
      puppet.manifests_path = "."
