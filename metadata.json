@@ -1,5 +1,5 @@
 {
-  "name": "jlust-puppet-tomcat",
+  "name": "jlust-tomcat",
   "author": "jlust",
   "description": "",
   "license": "",
@@ -8,7 +8,7 @@
   "summary": "",
   "version": "",
   "checksums": {
-    "Modulefile": "0be922348c049b235419e56167c5dcd7",
+    "Modulefile": "a40816ef5588f1d381aee298e3b54a52",
     "README": "acbd0cd1090ae2017f1c6614e379ba84",
     "README.md": "0729fd54d33cdb37c140fc97cf93f074",
     "files/conf/catalina.policy": "4a4b4804690c38f542607834976ec678",

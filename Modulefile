@@ -1,4 +1,4 @@
-name    'jlust-puppet-tomcat'
+name    'jlust-tomcat'
 version ''
 source ''
 author 'jlust'
