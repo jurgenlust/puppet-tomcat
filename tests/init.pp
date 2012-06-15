@@ -62,3 +62,9 @@ tomcat::webapp::ajp { 'example':
 	notify => Service["apache2"]	
 }
 
+exec {
+	"apt-update" :
+		command => "/usr/bin/apt-get update",
+}
+Exec["apt-update"] -> Package <| |>
+
