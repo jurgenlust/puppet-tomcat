@@ -2,7 +2,6 @@ class tomcat::packages {
 	package {
 		tomcat6 :
 			ensure => present,
-			require => Class["tomcat::java"],
 	}
 	package {
 		libapr1 :
