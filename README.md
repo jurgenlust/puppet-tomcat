@@ -12,11 +12,6 @@ Clone this repository in /etc/puppet/modules, but make sure you clone it as dire
 	cd /etc/puppet/modules
 	git clone git://github.com/jurgenlust/puppet-tomcat.git tomcat
 
-You also need the sun_jdk module:
-
-	cd /etc/puppet/modules
-	git clone git://github.com/jurgenlust/puppet-sun-jdk.git sun_jdk
-
 
 # Usage #
 
