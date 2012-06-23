@@ -1,6 +1,6 @@
 # This example installs the Tomcat 6 packages and creates 2 user instances:
 #
-# The first instance will be available at http://localhost:8180/example.
+# The first instance will be available at http://localhost:8180/servlet-examples.
 # 
 # The second instance does not have a war file yet. Once a jira.war file is
 # added to its webapp folder, the application will be available at
@@ -16,6 +16,7 @@ tomcat::webapp { 'examples':
 	username => 'example',
 	number => 1,
 	source => "puppet:///modules/tomcat/example/examples.war",
+	context => "servlet-examples"
 }
 
 tomcat::webapp { 'jira':

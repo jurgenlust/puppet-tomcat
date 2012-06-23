@@ -21,7 +21,8 @@ define tomcat::webapp(
 	$description = $title,
 	$webapp_base = "/srv",
 	$service_require = Class['tomcat'],
-	$source = undef
+	$source = undef,
+	$context = undef
 ) {
 		tomcat::webapp::user { $username: 
 			username => $username,
@@ -45,10 +46,15 @@ define tomcat::webapp(
 			]
 		}
 		if ($source) {
+			if ($context) {
+				$webapp_context = $context
+			} else {
+				$webapp_context = $username
+			}
 			tomcat::webapp::war { $username:
 				username => $username,
 				webapp_base => $webapp_base,
-				context => $username,
+				context => $webapp_context,
 				source => $source,
 				require => Tomcat::Webapp::Tomcat[$username],
 				before => Tomcat::Webapp::Service[$username]
