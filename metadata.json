@@ -10,8 +10,7 @@
   "checksums": {
     "Modulefile": "a40816ef5588f1d381aee298e3b54a52",
     "README": "acbd0cd1090ae2017f1c6614e379ba84",
-    "README.md": "32074cdcf96836466afc8c898de9b737",
-    "README.md~": "0729fd54d33cdb37c140fc97cf93f074",
+    "README.md": "5ca24cf1aeb3f6fda3bb4840fe78cf3d",
     "files/conf/catalina.policy": "4a4b4804690c38f542607834976ec678",
     "files/conf/catalina.properties": "958cbb7aea9224589b899ecf065d9d47",
     "files/conf/context.xml": "0fe95a15b3f4531be3db19260bfa148d",
@@ -23,7 +22,7 @@
     "manifests/init.pp": "3758c2c2dc1d29c580458d67f4480524",
     "manifests/packages.pp": "d164bac180fc689619e1fbd9aff0676b",
     "manifests/services.pp": "4b9750688aafbf3f59301b4d06ffc1ba",
-    "manifests/webapp.pp": "d5c9d2c9c12d3fdfd302323dbd081920",
+    "manifests/webapp.pp": "f8633382c60db31e8fdfe88b36e51cdb",
     "manifests/webapp/ajp.pp": "2d7a9c60d867e97269798b63257af8e4",
     "manifests/webapp/lib.pp": "512270337f1df40bd551a51730c39a45",
     "manifests/webapp/service.pp": "def66fad2817f637e85c027f55609f8a",
@@ -41,7 +40,7 @@
     "templates/example/default-site.erb": "9d4bc4c53b0ed51e3e34aa26e8610b0c",
     "templates/service/init.erb": "4a3866e5683e78738f7bdb08d7d9c273",
     "tests/Vagrantfile": "c5ac09eb50c3c5263f3744796c705af5",
-    "tests/init.pp": "b1661ff183fe423497a9cc234fca7529"
+    "tests/init.pp": "09e0fb4df9112527438ece703a8dec6f"
   },
   "dependencies": []
 }
