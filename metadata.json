@@ -38,7 +38,7 @@
     "templates/conf/server.xml.erb": "139fb48d6a304ae744f7dbd2f7eb52d9",
     "templates/example/context.erb": "a82565074bc3db03fcf356a9b843aed0",
     "templates/example/default-site.erb": "9d4bc4c53b0ed51e3e34aa26e8610b0c",
-    "templates/service/init.erb": "84f3e4711caa56b3750ee464807b4b17",
+    "templates/service/init.erb": "4e01e9c85b2792b52a2d5a09b0ecc617",
     "tests/Vagrantfile": "c5ac09eb50c3c5263f3744796c705af5",
     "tests/init.pp": "09e0fb4df9112527438ece703a8dec6f"
   },

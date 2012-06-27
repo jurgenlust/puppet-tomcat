@@ -16,17 +16,17 @@ ulimit -Sn <%= max_number_open_files %>
 
 case "$1" in
         start)
-                su -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/startup.sh" <%= username %>
+                su - -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/startup.sh" <%= username %>
         ;;
 
         stop)
-                su -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/shutdown.sh" <%= username %>
+                su - -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/shutdown.sh" <%= username %>
         ;;
 
         restart|reload|force-reload)
-                su -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/shutdown.sh" <%= username %>
+                su - -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/shutdown.sh" <%= username %>
                 sleep 20
-                su -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/startup.sh" <%= username %>
+                su - -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/startup.sh" <%= username %>
         ;;
         
         status)
