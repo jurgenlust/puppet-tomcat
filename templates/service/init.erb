@@ -9,6 +9,11 @@
 # Short-Description:    <%= description %>
 ### END INIT INFO
 
+<% if @max_number_open_files %>
+ulimit -Hn <%= max_number_open_files %>
+ulimit -Sn <%= max_number_open_files %>
+<% end %>
+
 case "$1" in
         start)
                 su -c "sh <%= webapp_base -%>/<%= username -%>/tomcat/bin/startup.sh" <%= username %>

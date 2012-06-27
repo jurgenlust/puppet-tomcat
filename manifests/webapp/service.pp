@@ -1,7 +1,8 @@
 define tomcat::webapp::service (
 	$username,
 	$description = $title,
-	$webapp_base = "/srv"
+	$webapp_base = "/srv",
+	$max_number_open_files = undef
 ) {
 	file { "/etc/init.d/${username}":
 			ensure => file,

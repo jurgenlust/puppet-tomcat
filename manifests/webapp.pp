@@ -22,7 +22,8 @@ define tomcat::webapp(
 	$webapp_base = "/srv",
 	$service_require = Class['tomcat'],
 	$source = undef,
-	$context = undef
+	$context = undef,
+	$max_number_open_files = undef
 ) {
 		tomcat::webapp::user { $username: 
 			username => $username,
@@ -40,6 +41,7 @@ define tomcat::webapp(
 		tomcat::webapp::service { $username:
 			username => $username, 
 			webapp_base => $webapp_base,
+			max_number_open_files => $max_number_open_files,
 			require => [
 				Tomcat::Webapp::Tomcat[$username],
 				$service_require
