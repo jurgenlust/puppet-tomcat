@@ -69,6 +69,22 @@ define tomcat::webapp::tomcat ($username,
 			require => File["${webapp_base}/${username}/tomcat"],
 	}
 	file {
+		"${webapp_base}/${username}/tomcat/shared" :
+			ensure => directory,
+			owner => $username,
+			group => $username,
+			mode => 0755,
+			require => File["${webapp_base}/${username}/tomcat"],
+	}
+	file {
+		"${webapp_base}/${username}/tomcat/shared/classes" :
+			ensure => directory,
+			owner => $username,
+			group => $username,
+			mode => 0755,
+			require => File["${webapp_base}/${username}/tomcat"],
+	}
+	file {
 		"${webapp_base}/${username}/tomcat/bin/bootstrap.jar" :
 			ensure => link,
 			target => "/usr/share/tomcat6/bin/bootstrap.jar",

@@ -26,7 +26,7 @@
     "manifests/webapp/ajp.pp": "2d7a9c60d867e97269798b63257af8e4",
     "manifests/webapp/lib.pp": "512270337f1df40bd551a51730c39a45",
     "manifests/webapp/service.pp": "def66fad2817f637e85c027f55609f8a",
-    "manifests/webapp/tomcat.pp": "7149eaf970bc3a742f5f0e028e77c6e5",
+    "manifests/webapp/tomcat.pp": "e8027c7135dc4cd0c2ec365b067f5477",
     "manifests/webapp/user.pp": "a931a9bc9ffd2b4c61c04d9749d8d041",
     "manifests/webapp/war.pp": "8e06f07241e58c5dafa1f9dc96181a29",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
