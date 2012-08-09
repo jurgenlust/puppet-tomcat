@@ -2,9 +2,11 @@ define tomcat::webapp::user(
 	$username,
 	$webapp_base = "/srv"
 ) {
-	file { $webapp_base:
-		ensure => directory,
-		require => Class["tomcat"],
+	if !defined(File[$webapp_base]) {
+		file { $webapp_base:
+			ensure => directory,
+			require => Class["tomcat"],
+		}
 	}
 	group { $username:
 		ensure => present,
